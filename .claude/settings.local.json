@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(DATABASE_USE_POSTGRES=false DJANGO_DEBUG=true DJANGO_SECRET_KEY=dev DJANGO_ALLOWED_HOSTS=* SUPABASE_JWT_DISABLE_VERIFICATION=true SUPABASE_URL= SUPABASE_JWT_SECRET= SUPABASE_JWT_AUDIENCE=authenticated .venv/bin/python:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(DJANGO_SETTINGS_MODULE=core.settings PYTHONPATH=. python:*)",
+      "Bash(python:*)"
+    ]
+  }
+}

@@ -16,6 +16,7 @@ packaging==26.2
 psycopg==3.3.4
 psycopg-binary==3.3.4
 PyJWT==2.13.0
+cryptography==45.0.5
 python-dotenv==1.2.2
 PyYAML==6.0.3
 referencing==0.37.0

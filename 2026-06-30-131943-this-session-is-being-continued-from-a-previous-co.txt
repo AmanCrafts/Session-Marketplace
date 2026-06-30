@@ -1,0 +1,26 @@
+
+╭─── Claude Code v2.1.63 ──────────────────────────────────────────────────────╮
+│                                          │ Tips for getting started          │
+│               Welcome back!              │ Run /init to create a CLAUDE.md … │
+│                                          │ ───────────────────────────────── │
+│                  ▐▛███▜▌                 │ Recent activity                   │
+│                 ▝▜█████▛▘                │ No recent activity                │
+│                   ▘▘ ▝▝                  │                                   │
+│                                          │                                   │
+│   minimax-m3:cloud · API Usage Billing   │                                   │
+│            ~/Desktop/Sessions            │                                   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+  /model to try Opus 4.6
+
+✻ Conversation compacted (ctrl+o for history)
+
+  ⎿  API Error: 429 
+     {"type":"error","error":{"type":"rate_limit_error","message":"you 
+     (theamanmalikarts) have reached your session usage limit, upgrade for 
+     higher limits: https://ollama.com/upgrade (ref: edc88f2b-4a99-4316-9dd9-55e
+     b50ec2f10)"},"request_id":"req_5585303284b29dc584bc5e5f"}
+
+✻ Churned for 6m 3s
+
+⏺ Background command "Start dev server for final smoke test" was stopped
