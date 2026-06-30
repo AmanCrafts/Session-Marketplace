@@ -531,20 +531,21 @@ config:
 ---
 erDiagram
     direction LR
-    USER ||--|| PROFILE : has
-    USER ||--o{ SESSION : creates
-    USER ||--o{ BOOKING : makes
-    USER ||--o{ OAUTH_ACCOUNT : links
+
+    APP_USER ||--|| PROFILE : has
+    APP_USER ||--o{ SESSION : creates
+    APP_USER ||--o{ BOOKING : makes
+
     SESSION ||--o{ BOOKING : receives
     SESSION ||--o{ SESSION_TAG : has
     TAG ||--o{ SESSION_TAG : maps
     SESSION ||--o{ SESSION_IMAGE : contains
-    SESSION ||--o| PAYMENT : may_have
-    BOOKING ||--o| PAYMENT : may_reference
 
-    USER {
+    BOOKING ||--o| PAYMENT : has
+
+    APP_USER {
         uuid id PK
-        string supabase_user_id
+        uuid supabase_user_id
         string email
         string role
         datetime created_at
@@ -553,20 +554,12 @@ erDiagram
 
     PROFILE {
         uuid id PK
-        uuid user_id FK
+        uuid app_user_id FK
         string full_name
         string avatar_url
         string bio
         datetime created_at
         datetime updated_at
-    }
-
-    OAUTH_ACCOUNT {
-        uuid id PK
-        uuid user_id FK
-        string provider
-        string provider_subject
-        datetime created_at
     }
 
     SESSION {
@@ -624,7 +617,6 @@ erDiagram
     PAYMENT {
         uuid id PK
         uuid booking_id FK
-        uuid user_id FK
         string provider
         string provider_payment_id
         string status
@@ -632,6 +624,7 @@ erDiagram
         string currency
         datetime created_at
     }
+
 ```
 
 ### Table Purpose Summary
