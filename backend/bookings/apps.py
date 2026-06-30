@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class BookingsConfig(AppConfig):
-    name = 'bookings'
+    name = "bookings"
+    verbose_name = "Bookings"

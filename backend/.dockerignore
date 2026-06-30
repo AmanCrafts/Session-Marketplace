@@ -1,0 +1,26 @@
+.venv
+venv
+env
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.coverage
+htmlcov
+
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+
+.idea
+.vscode
+.DS_Store
+
+# Local artefacts
+db.sqlite3
+media
+staticfiles
+*.log
